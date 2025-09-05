@@ -1,0 +1,565 @@
+/* ===== MODERN DIET FORM CSS ===== */
+
+/* CSS Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main Title */
+h2 {
+  text-align: center;
+  color: #fff;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 300;
+}
+
+/* Form Container */
+form {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: clamp(1.5rem, 3vw, 3rem);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+/* Form Grid Layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Form Labels */
+label {
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fff;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Radio and Checkbox Styles */
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+  accent-color: #667eea;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.radio-item,
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  background: rgba(102, 126, 234, 0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.radio-item:hover,
+.checkbox-item:hover {
+  background: rgba(102, 126, 234, 0.1);
+  border-color: #667eea;
+}
+
+/* Range Input */
+input[type="range"] {
+  width: 100%;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 3px;
+  outline: none;
+  margin: 1rem 0;
+  appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #667eea;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+th {
+  padding: 1rem 0.8rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+td {
+  padding: 1rem 0.8rem;
+  text-align: center;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+tbody tr {
+  transition: all 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(102, 126, 234, 0.03);
+}
+
+tbody tr:hover {
+  background: rgba(102, 126, 234, 0.08);
+  transform: scale(1.01);
+}
+
+table select,
+table input {
+  width: 100%;
+  min-width: 120px;
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+/* Button Styles */
+input[type="submit"],
+input[type="reset"] {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  min-width: 120px;
+}
+
+input[type="submit"] {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+input[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+input[type="reset"] {
+  background: linear-gradient(135deg, #e53e3e, #c53030);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(229, 62, 62, 0.4);
+}
+
+input[type="reset"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(229, 62, 62, 0.6);
+}
+
+/* Weekday Section */
+.weekday {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 2px solid rgba(102, 126, 234, 0.2);
+  margin: 1.5rem 0;
+}
+
+.weekday h4 {
+  color: #e53e3e;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Habits Section */
+.habits_div {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem 1.5rem;
+  border-radius: 15px;
+  border: 2px solid rgba(102, 126, 234, 0.1);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.habits_div h3 {
+  color: #38a169;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.habits_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.healthy_habits {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 0.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+}
+
+.healthy_habits:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  border-color: #38a169;
+}
+
+/* Designer Credit */
+p {
+  text-align: center;
+  margin: 2rem 0;
+  color: #4a5568;
+  font-style: italic;
+}
+
+p img {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+  transition: transform 0.3s ease;
+}
+
+p img:hover {
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE DESIGN - Media Queries */
+
+/* Large Tablets and Small Desktops */
+@media (max-width: 1024px) {
+  table {
+    font-size: 0.85rem;
+  }
+
+  th,
+  td {
+    padding: 0.8rem 0.6rem;
+  }
+
+  .healthy_habits {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Stack radio buttons and checkboxes */
+  .radio-group,
+  .checkbox-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Make table scrollable horizontally */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .healthy_habits {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  /* Transform table into stacked cards */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  tbody tr:hover {
+    transform: none;
+  }
+
+  td {
+    border: none;
+    padding: 0.5rem 0;
+    text-align: left;
+    position: relative;
+    padding-left: 40%;
+  }
+
+  td:first-child {
+    padding-left: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #667eea;
+    border-bottom: 1px solid #e2e8f0;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 35%;
+    padding-right: 1rem;
+    white-space: nowrap;
+    font-weight: 600;
+    color: #4a5568;
+  }
+
+  /* Add data labels for mobile view */
+  td:nth-child(2):before {
+    content: "Breakfast:";
+  }
+  td:nth-child(3):before {
+    content: "Lunch:";
+  }
+  td:nth-child(4):before {
+    content: "Dinner:";
+  }
+  td:nth-child(5):before {
+    content: "Health Snack:";
+  }
+  td:nth-child(6):before {
+    content: "Health Drink:";
+  }
+  td:nth-child(7):before {
+    content: "Exercise:";
+  }
+  td:nth-child(8):before {
+    content: "Calories:";
+  }
+
+  /* Button adjustments */
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  /* Habits images in 2x3 grid */
+  .habits_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .habits_div h3 {
+    grid-column: 1 / -1;
+  }
+
+  .healthy_habits {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    padding: 1rem;
+    margin: 0;
+    border-radius: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  select {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .weekday {
+    padding: 1rem;
+  }
+
+  .healthy_habits {
+    height: 80px;
+  }
+
+  p img {
+    max-width: 100px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  body {
+    padding: 0.25rem;
+  }
+
+  td {
+    padding-left: 45%;
+  }
+
+  td:before {
+    width: 40%;
+    font-size: 0.8rem;
+  }
+
+  .healthy_habits {
+    height: 70px;
+  }
+}
+
+/* Accessibility and Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  form {
+    box-shadow: none;
+    background: #fff;
+    padding: 0;
+  }
+
+  .healthy_habits {
+    width: 50px;
+    height: 50px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    display: none;
+  }
+}

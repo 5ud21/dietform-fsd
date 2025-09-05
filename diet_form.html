@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="diet_style.css">
+    <title>Diet Form</title>
+  </head>
+  <body>
+    <h2>Sample Diet Form</h2>
+    <form action="">
+      <label for=""><strong>Name:</strong></label>
+      <input type="text" name="" id="name_input" required />
+      <br /><br />
+      <label for=""><strong>Age:</strong></label>
+      <input type="number" name="" id="age_input" required />
+      <br /><br />
+      <label for=""><strong>DOB:</strong></label>
+      <input type="date" name="" id="" required />
+      &nbsp;&nbsp;
+      <label for=""><strong>Gender:</strong></label>
+      <input type="radio" name="gender" id="" selected>Male<input type="radio" name="gender" id="">Female<input type="radio" name="gender" id="">Other
+      <br /><br />
+      <label for=""><strong>Email ID: </strong></label>
+      <input type="email" name="" id="" required />
+      &nbsp;
+      <label for=""><strong>Mobile:</strong></label>
+      <input type="tel" name="" id="" required />
+      <br /><br />
+      <label for=""><strong>Height(in cms): </strong></label>
+      <input type="number" name="" id="" required />
+      &nbsp;&nbsp;
+      <label for=""><strong>Weight(in kgs): </strong></label>
+      <input type="number" name="" id="" required />
+      <br /><br />
+      <label for=""><strong>Blood Group:</strong></label>
+      <select name="blood_group" id="" required>
+        <option value="a+">A+</option>
+        <option value="a-">A-</option>
+        <option value="b+">B+</option>
+        <option value="b-">B-</option>
+        <option value="o+">O+</option>
+        <option value="o-">O-</option>
+        <option value="ab+">AB+</option>
+        <option value="ab-">AB-</option>
+        <option value="bombay">Bombay Blood Group</option>
+      </select>
+      <br /><br />
+      <label for=""><strong>Diet Type:</strong></label>
+      <input type="radio" name="diet_type" id="" />Veg
+      <input type="radio" name="diet_type" id="" />Non-Veg
+      <input type="radio" name="diet_type" id="" />Eggiterian
+      <input type="radio" name="diet_type" id="" />Vegan &nbsp;&nbsp;<label
+        for=""
+        ><strong>Marital Status</strong></label
+      >
+      <input type="radio" name="marital_status" id="" />Married
+      <input type="radio" name="marital_status" id="" />Unmarried <br /><br />
+      <label for=""><strong>Goal:</strong></label>
+      <input type="checkbox" name="goal" id="" />Weight Loss
+      <input type="checkbox" name="goal" id="" />Weight Gain
+      <input type="checkbox" name="goal" id="" />Fitness <br /><br />
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Dinner</th>
+            <th>Health Snack</th>
+            <th>Health Drink</th>
+            <th>Exercise</th>
+            <th>Calories Burnt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4><i>Monday</i></h4>
+            </td>
+            <td>
+              <select name="mon_breakfast" id="">
+                <option value="">Paneer Paratha</option>
+                <option value="">Idly Sambar</option>
+                <option value="">Poori Sabji</option>
+                <option value="">Poha Jalebi</option>
+                <option value="">Aloo Paratha</option>
+                <option value="">Masala Dosa</option>
+                <option value="">Upma</option>
+              </select>
+            </td>
+            <td>
+              <select name="mon_lunch" id="">
+                <option value="">Veg Fried Rice</option>
+                <option value="">Chicken Fried Rice</option>
+                <option value="">Chicken Biriyani</option>
+                <option value="">Full Meals</option>
+                <option value="">Veg Biriyani</option>
+                <option value="">Egg Kothu Parotta</option>
+                <option value="">Chole Bhature</option>
+              </select>
+            </td>
+            <td>
+              <select name="mon_dinner" id="">
+                <option value="">Butter Kulcha</option>
+                <option value="">Butter Naan</option>
+                <option value="">Idiyappam</option>
+                <option value="">Butter Sevai</option>
+                <option value="">Neer Dosa</option>
+                <option value="">Rava Idly</option>
+                <option value="">Romali Roti</option>
+              </select>
+            </td>
+            <td>
+              <select name="mon_health_snack" id="">
+                <option value="">Greek Yogurt with Berries</option>
+                <option value="">Mixed Nuts</option>
+                <option value="">Fruit Salad</option>
+                <option value="">Hard-Boiled Eggs</option>
+                <option value="">Steamed Soybeans</option>
+                <option value="">Chia Pudding</option>
+                <option value="">Roasted Chickpeas</option>
+              </select>
+            </td>
+            <td>
+              <select name="mon_health_drink" id="">
+                <option value="">Green Tea</option>
+                <option value="">Coconut Water</option>
+                <option value="">Kombucha</option>
+                <option value="">Oat Milk</option>
+                <option value="">Lime Water</option>
+                <option value="">Vegetable Juice</option>
+                <option value="">Jigarthanda</option>
+              </select>
+            </td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td>
+              <h4><i>Tuesday</i></h4>
+            </td>
+            <td>
+              <select name="tue_breakfast" id="">
+                <option value="">Paneer Paratha</option>
+                <option value="">Idly Sambar</option>
+                <option value="">Poori Sabji</option>
+                <option value="">Poha Jalebi</option>
+                <option value="">Aloo Paratha</option>
+                <option value="">Masala Dosa</option>
+                <option value="">Upma</option>
+              </select>
+            </td>
+            <td>
+              <select name="tue_lunch" id="">
+                <option value="">Veg Fried Rice</option>
+                <option value="">Chicken Fried Rice</option>
+                <option value="">Chicken Biriyani</option>
+                <option value="">Full Meals</option>
+                <option value="">Veg Biriyani</option>
+                <option value="">Egg Kothu Parotta</option>
+                <option value="">Chole Bhature</option>
+              </select>
+            </td>
+            <td>
+              <select name="tue_dinner" id="">
+                <option value="">Butter Kulcha</option>
+                <option value="">Butter Naan</option>
+                <option value="">Idiyappam</option>
+                <option value="">Butter Sevai</option>
+                <option value="">Neer Dosa</option>
+                <option value="">Rava Idly</option>
+                <option value="">Romali Roti</option>
+              </select>
+            </td>
+            <td>
+              <select name="tue_health_snack" id="">
+                <option value="">Greek Yogurt with Berries</option>
+                <option value="">Mixed Nuts</option>
+                <option value="">Fruit Salad</option>
+                <option value="">Hard-Boiled Eggs</option>
+                <option value="">Steamed Soybeans</option>
+                <option value="">Chia Pudding</option>
+                <option value="">Roasted Chickpeas</option>
+              </select>
+            </td>
+            <td>
+              <select name="tue_health_drink" id="">
+                <option value="">Green Tea</option>
+                <option value="">Coconut Water</option>
+                <option value="">Kombucha</option>
+                <option value="">Oat Milk</option>
+                <option value="">Lime Water</option>
+                <option value="">Vegetable Juice</option>
+                <option value="">Jigarthanda</option>
+              </select>
+            </td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td>
+              <h4><i>Wednesday</i></h4>
+            </td>
+            <td>
+              <select name="wed_breakfast" id="">
+                <option value="">Paneer Paratha</option>
+                <option value="">Idly Sambar</option>
+                <option value="">Poori Sabji</option>
+                <option value="">Poha Jalebi</option>
+                <option value="">Aloo Paratha</option>
+                <option value="">Masala Dosa</option>
+                <option value="">Upma</option>
+              </select>
+            </td>
+            <td>
+              <select name="wed_lunch" id="">
+                <option value="">Veg Fried Rice</option>
+                <option value="">Chicken Fried Rice</option>
+                <option value="">Chicken Biriyani</option>
+                <option value="">Full Meals</option>
+                <option value="">Veg Biriyani</option>
+                <option value="">Egg Kothu Parotta</option>
+                <option value="">Chole Bhature</option>
+              </select>
+            </td>
+            <td>
+              <select name="wed_dinner" id="">
+                <option value="">Butter Kulcha</option>
+                <option value="">Butter Naan</option>
+                <option value="">Idiyappam</option>
+                <option value="">Butter Sevai</option>
+                <option value="">Neer Dosa</option>
+                <option value="">Rava Idly</option>
+                <option value="">Romali Roti</option>
+              </select>
+            </td>
+            <td>
+              <select name="wed_health_snack" id="">
+                <option value="">Greek Yogurt with Berries</option>
+                <option value="">Mixed Nuts</option>
+                <option value="">Fruit Salad</option>
+                <option value="">Hard-Boiled Eggs</option>
+                <option value="">Steamed Soybeans</option>
+                <option value="">Chia Pudding</option>
+                <option value="">Roasted Chickpeas</option>
+              </select>
+            </td>
+            <td>
+              <select name="wed_health_drink" id="">
+                <option value="">Green Tea</option>
+                <option value="">Coconut Water</option>
+                <option value="">Kombucha</option>
+                <option value="">Oat Milk</option>
+                <option value="">Lime Water</option>
+                <option value="">Vegetable Juice</option>
+                <option value="">Jigarthanda</option>
+              </select>
+            </td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td>
+              <h4><i>Thursday</i></h4>
+            </td>
+            <td>
+              <select name="thur_breakfast" id="">
+                <option value="">Paneer Paratha</option>
+                <option value="">Idly Sambar</option>
+                <option value="">Poori Sabji</option>
+                <option value="">Poha Jalebi</option>
+                <option value="">Aloo Paratha</option>
+                <option value="">Masala Dosa</option>
+                <option value="">Upma</option>
+              </select>
+            </td>
+            <td>
+              <select name="thur_lunch" id="">
+                <option value="">Veg Fried Rice</option>
+                <option value="">Chicken Fried Rice</option>
+                <option value="">Chicken Biriyani</option>
+                <option value="">Full Meals</option>
+                <option value="">Veg Biriyani</option>
+                <option value="">Egg Kothu Parotta</option>
+                <option value="">Chole Bhature</option>
+              </select>
+            </td>
+            <td>
+              <select name="thur_dinner" id="">
+                <option value="">Butter Kulcha</option>
+                <option value="">Butter Naan</option>
+                <option value="">Idiyappam</option>
+                <option value="">Butter Sevai</option>
+                <option value="">Neer Dosa</option>
+                <option value="">Rava Idly</option>
+                <option value="">Romali Roti</option>
+              </select>
+            </td>
+            <td>
+              <select name="thur_health_snack" id="">
+                <option value="">Greek Yogurt with Berries</option>
+                <option value="">Mixed Nuts</option>
+                <option value="">Fruit Salad</option>
+                <option value="">Hard-Boiled Eggs</option>
+                <option value="">Steamed Soybeans</option>
+                <option value="">Chia Pudding</option>
+                <option value="">Roasted Chickpeas</option>
+              </select>
+            </td>
+            <td>
+              <select name="thur_health_drink" id="">
+                <option value="">Green Tea</option>
+                <option value="">Coconut Water</option>
+                <option value="">Kombucha</option>
+                <option value="">Oat Milk</option>
+                <option value="">Lime Water</option>
+                <option value="">Vegetable Juice</option>
+                <option value="">Jigarthanda</option>
+              </select>
+            </td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td>
+              <h4><i>Friday</i></h4>
+            </td>
+            <td>
+              <select name="fri_breakfast" id="">
+                <option value="">Paneer Paratha</option>
+                <option value="">Idly Sambar</option>
+                <option value="">Poori Sabji</option>
+                <option value="">Poha Jalebi</option>
+                <option value="">Aloo Paratha</option>
+                <option value="">Masala Dosa</option>
+                <option value="">Upma</option>
+              </select>
+            </td>
+            <td>
+              <select name="fri_lunch" id="">
+                <option value="">Veg Fried Rice</option>
+                <option value="">Chicken Fried Rice</option>
+                <option value="">Chicken Biriyani</option>
+                <option value="">Full Meals</option>
+                <option value="">Veg Biriyani</option>
+                <option value="">Egg Kothu Parotta</option>
+                <option value="">Chole Bhature</option>
+              </select>
+            </td>
+            <td>
+              <select name="fri_dinner" id="">
+                <option value="">Butter Kulcha</option>
+                <option value="">Butter Naan</option>
+                <option value="">Idiyappam</option>
+                <option value="">Butter Sevai</option>
+                <option value="">Neer Dosa</option>
+                <option value="">Rava Idly</option>
+                <option value="">Romali Roti</option>
+              </select>
+            </td>
+            <td>
+              <select name="fri_health_snack" id="">
+                <option value="">Greek Yogurt with Berries</option>
+                <option value="">Mixed Nuts</option>
+                <option value="">Fruit Salad</option>
+                <option value="">Hard-Boiled Eggs</option>
+                <option value="">Steamed Soybeans</option>
+                <option value="">Chia Pudding</option>
+                <option value="">Roasted Chickpeas</option>
+              </select>
+            </td>
+            <td>
+              <select name="fri_health_drink" id="">
+                <option value="">Green Tea</option>
+                <option value="">Coconut Water</option>
+                <option value="">Kombucha</option>
+                <option value="">Oat Milk</option>
+                <option value="">Lime Water</option>
+                <option value="">Vegetable Juice</option>
+                <option value="">Jigarthanda</option>
+              </select>
+            </td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td>
+              <h4><i>Saturday</i></h4>
+            </td>
+            <td>
+              <select name="sat_breakfast" id="">
+                <option value="">Paneer Paratha</option>
+                <option value="">Idly Sambar</option>
+                <option value="">Poori Sabji</option>
+                <option value="">Poha Jalebi</option>
+                <option value="">Aloo Paratha</option>
+                <option value="">Masala Dosa</option>
+                <option value="">Upma</option>
+              </select>
+            </td>
+            <td>
+              <select name="sat_lunch" id="">
+                <option value="">Veg Fried Rice</option>
+                <option value="">Chicken Fried Rice</option>
+                <option value="">Chicken Biriyani</option>
+                <option value="">Full Meals</option>
+                <option value="">Veg Biriyani</option>
+                <option value="">Egg Kothu Parotta</option>
+                <option value="">Chole Bhature</option>
+              </select>
+            </td>
+            <td>
+              <select name="sat_dinner" id="">
+                <option value="">Butter Kulcha</option>
+                <option value="">Butter Naan</option>
+                <option value="">Idiyappam</option>
+                <option value="">Butter Sevai</option>
+                <option value="">Neer Dosa</option>
+                <option value="">Rava Idly</option>
+                <option value="">Romali Roti</option>
+              </select>
+            </td>
+            <td>
+              <select name="sat_health_snack" id="">
+                <option value="">Greek Yogurt with Berries</option>
+                <option value="">Mixed Nuts</option>
+                <option value="">Fruit Salad</option>
+                <option value="">Hard-Boiled Eggs</option>
+                <option value="">Steamed Soybeans</option>
+                <option value="">Chia Pudding</option>
+                <option value="">Roasted Chickpeas</option>
+              </select>
+            </td>
+            <td>
+              <select name="sat_health_drink" id="">
+                <option value="">Green Tea</option>
+                <option value="">Coconut Water</option>
+                <option value="">Kombucha</option>
+                <option value="">Oat Milk</option>
+                <option value="">Lime Water</option>
+                <option value="">Vegetable Juice</option>
+                <option value="">Jigarthanda</option>
+              </select>
+            </td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td>
+              <h4><i>Sunday</i></h4>
+            </td>
+            <td>
+              <select name="sun_breakfast" id="">
+                <option value="">Paneer Paratha</option>
+                <option value="">Idly Sambar</option>
+                <option value="">Poori Sabji</option>
+                <option value="">Poha Jalebi</option>
+                <option value="">Aloo Paratha</option>
+                <option value="">Masala Dosa</option>
+                <option value="">Upma</option>
+              </select>
+            </td>
+            <td>
+              <select name="sun_lunch" id="">
+                <option value="">Veg Fried Rice</option>
+                <option value="">Chicken Fried Rice</option>
+                <option value="">Chicken Biriyani</option>
+                <option value="">Full Meals</option>
+                <option value="">Veg Biriyani</option>
+                <option value="">Egg Kothu Parotta</option>
+                <option value="">Chole Bhature</option>
+              </select>
+            </td>
+            <td>
+              <select name="sun_dinner" id="">
+                <option value="">Butter Kulcha</option>
+                <option value="">Butter Naan</option>
+                <option value="">Idiyappam</option>
+                <option value="">Butter Sevai</option>
+                <option value="">Neer Dosa</option>
+                <option value="">Rava Idly</option>
+                <option value="">Romali Roti</option>
+              </select>
+            </td>
+            <td>
+              <select name="sun_health_snack" id="">
+                <option value="">Greek Yogurt with Berries</option>
+                <option value="">Mixed Nuts</option>
+                <option value="">Fruit Salad</option>
+                <option value="">Hard-Boiled Eggs</option>
+                <option value="">Steamed Soybeans</option>
+                <option value="">Chia Pudding</option>
+                <option value="">Roasted Chickpeas</option>
+              </select>
+            </td>
+            <td>
+              <select name="sun_health_drink" id="">
+                <option value="">Green Tea</option>
+                <option value="">Coconut Water</option>
+                <option value="">Kombucha</option>
+                <option value="">Oat Milk</option>
+                <option value="">Lime Water</option>
+                <option value="">Vegetable Juice</option>
+                <option value="">Jigarthanda</option>
+              </select>
+            </td>
+            <td><input type="text" name="" id="" /></td>
+            <td><input type="number" name="" id="" /></td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <label for=""><strong>No. of Cheat days: </strong></label>
+      <input type="number" name="" id="" />
+      <div class="weekday">
+        <h4><i>Cheat day Menu</i></h4>
+        <label for=""><strong>Breakfast</strong></label>
+        <select name="mon_breakfast" id="">
+          <option value="">Paneer Paratha</option>
+          <option value="">Idly Sambar</option>
+          <option value="">Poori Sabji</option>
+          <option value="">Poha Jalebi</option>
+          <option value="">Aloo Paratha</option>
+          <option value="">Masala Dosa</option>
+          <option value="">Upma</option>
+        </select>
+        &nbsp;
+        <label for=""><strong>Lunch</strong></label>
+        <select name="mon_breakfast" id="">
+          <option value="">Veg Fried Rice</option>
+          <option value="">Chicken Fried Rice</option>
+          <option value="">Chicken Biriyani</option>
+          <option value="">Full Meals</option>
+          <option value="">Bacon Cheeseburger</option>
+          <option value="">Egg Pasta</option>
+          <option value="">Chole Bhature</option>
+        </select>
+        &nbsp;
+        <label for=""><strong>Dinner</strong></label>
+        <select name="mon_breakfast" id="">
+          <option value="">Butter Kulcha</option>
+          <option value="">BBQ Chicken Pizza</option>
+          <option value="">Chicago Deep Dish Pizza</option>
+          <option value="">Big Mac</option>
+          <option value="">Neer Dosa</option>
+          <option value="">Chicken Burrito Bowl</option>
+          <option value="">Romali Roti</option>
+        </select>
+        <br />
+      </div>
+      <br />
+      <label for=""><strong>Overall Experience</strong></label>
+      <input type="range" name="" id="" min="0" max="5" value="3" step="1" />
+      <br /><br />
+      <input type="reset" value="Reset" />
+      &nbsp;
+      <input type="submit" value="Submit" />
+      <p>
+        <br>
+        <i><strong>Designed by: </strong></i><br>
+        <img src="Sudharshan_Resume_pic_resized_amrita.jpg" alt="" width="200" height="250">
+        <br>
+        <i><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sudharshan R</strong></i>
+      </p>
+      <br>
+      <div class="habits_div">
+        <h3><em>Recommended habits</em></h3>
+        <img src="encouraging_healthy_eating.jpeg" alt="" class="healthy_habits"><img src="Healthy_Eating_plate.jpg" alt="" class="healthy_habits"><img src="healthy_heart.jpeg" alt="" class="healthy_habits"><img src="icmr_dietary_guidelines.jpeg" alt="" class="healthy_habits"><img src="good-food-habits.png" alt="" class="healthy_habits"><img src="who_diet.jpeg" alt="" class="healthy_habits">
+      </div>
+    </form>
+    <!-- Smoking Habits, Drinking Habits, Feedback.  -->
+  </body>
+</html>
